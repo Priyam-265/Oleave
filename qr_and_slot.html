@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oleave</title>
+  <link rel="icon" href="oleave_logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="qr_and_slot.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Confirm Your Pickup Slot</h1>
+
+  <div class="order-box">
+    <label for="time-slot">Select Time Slot:</label>
+    <select id="time-slot">
+      <option value="">--Choose--</option>
+    </select>
+    <button id="order-btn" onclick="placeOrder()">Place Order</button>
+
+    <!-- Order Confirmation and Animation -->
+    <div id="confirmation" class="hidden">
+        <div class="tick-circle">
+          <svg viewBox="0 0 52 52">
+            <path d="M14 27 L22 35 L38 18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="confirmed-text">Order Confirmed!</div>
+    </div>
+
+    <!-- QR Code -->
+    <div id="qrcode" class="hidden"></div>
+  </div>
+
+  <div class="timeline-container hidden" id="order-timeline">
+    <div class="timeline-stage" id="stage-confirmed">
+      <div class="stage-label">Order Confirmed</div>
+    </div>
+    <div class="timeline-line" id="line-1"></div>
+    <div class="timeline-stage" id="stage-preparing">
+      <div class="stage-label">Preparing</div>
+    </div>
+    <div class="timeline-line" id="line-2"></div>
+    <div class="timeline-stage" id="stage-prepared">
+      <div class="stage-label">Prepared</div>
+    </div>
+  </div>
+  
+  <audio id="order-sound" src="order-confirmation.mp3" preload="auto"></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="animate_btn.js"></script>
+  <script src="timeline.js"></script>
+</body>
+</html>

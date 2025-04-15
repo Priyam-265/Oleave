@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+Oleave 
+    </title>
+    <link rel="icon" href= 
+    "oleave_logo.png" 
+              type="image/x-icon"> 
+    </head> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- loader -->
+    <!-- <h1 class="counter">
+        0
+    </h1> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="loader.js"></script> -->
+    <!-- transition  -->
+    <div class="transition">
+       <div class="transition-row row-1">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+        <div class="transition-row row-2">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./script.js"></script>
+   
+
+
+    <div class="header">
+        <div class="navlist">
+            <ul id="navl">
+                <li><a  id="listitems" href="./index.html">Home</a></li>
+                <li ><a id="listitems" href="./menu.html">Menu</a></li>
+                <!-- <li><a href="" id="listitems">Offers</a></li> -->
+                <li><a href="../recipe project/index.html" target="_blank" id="listitems">Recipes</a></li>
+                <li><a href="../food order website finla/aboutus.html" id="listitems">About us
+                </a></li>
+                <li><a href="admin.html" target="_blank" id="listitems">Vendor</a></li>
+
+                <li><a href="../food order website finla/help.html" id="listitems">Help
+                </a></li>   
+            </ul>
+        </div>
+        <img  id="logoo" src="oleave_logo.jpg">
+        <script>
+        document.getElementById("listitems").addEventListener("click", function(event) {
+            event.preventDefault();
+            window.open(this.href, "_blank");
+          });
+          </script>
+        <div class="navlist">
+            <ul id="nav2">
+            <!-- <li id="navlis">
+                <form action="">
+                    <input id="input" type="search" autofocus required>
+            <i class="fa fa-search"></i></form></li> -->
+            <li>
+            <form action="">
+                <input type="search" required>
+                <i class="fa fa-search"></i>
+              </form>
+            </li>
+            <a href="./cart.html">
+            <li><button id="button" href="#">
+                <img src="https://img.icons8.com/?size=30&id=85080&format=png&color=000000A">
+            </button></li>
+            </a>
+            <div class="header-content">      
+                <li><button id="button-a">
+                    <img src="https://img.icons8.com/?size=29&id=xsQJfMRCX2DI&format=png&color=000000">
+                </button>
+            </div>
+                <div id="dropdown" class="dropdown" style="display: none;">
+                    <button id="logoutbuton">Profile</button>
+                    <div class="profile-section">
+                        <img id="profile-pic" src="kitty.jpg" alt=""/>
+                        <input type="file" id="upload-pic" style="display: none;" accept="image/*" />
+                        <button id="upload-button">Upload Image</button>
+                        <h3 id="user-name">User Name</h3>
+                        <p id="user-email">user@example.com</p>
+                    </div>
+                    <button id="logoutbutton">Logout</button>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <script src="loginfun.js"></script>
+        <div class="curve"></div>            
+    </div>
+    <main>
+        <div class="container">
+            <div class="firstpage , img">
+                <div class="fimg">
+                </div>
+                <div class="ftext">
+                <div class="text">
+                    <div class="bigtext">
+                        <h1 id="heading">
+                            ORDER FOOD
+                        </h1>
+                        <h1 id="heading2">
+                            TO YOUR DOOR
+                        </h1>
+                    </div>
+                    <div class="sidetext">
+                        <div class="big"><h1 id="headings">
+                            12K+
+                        </h1></div>
+                        <div class="small">
+                            <p id="para">
+                            Users using our
+                            <br>
+                            Services
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondtext">
+                    <div class="bigtext">
+                        <h3 id="heading3">
+                            FIND YOUR FAVOURITE DISH
+                        </h3>
+                        <p id="para2">
+                            Discover culinary delights and find your<br>favourite dish with our swift and savory <br> food deleivery service
+                        </p>
+                        <a  id="em" href="menu.html#menu1"><button id="button2">Explore Menu</button></a>
+                    </div>
+                    <div class="sidetext">
+                        <div class="big">
+                            <p id="para3">
+                                With Oleave , get<br>
+                                your  food  deleivered to<br>
+                                your doorstep within <br>an hour!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="secondpage">
+                <div class="curve2"></div>
+                <div class="mainwork">
+                    <div class="mainc1">
+                        <h1 id="heading4">
+                            GET YOUR FOOD IN LESS<br>
+                            </h1> 
+                            <h1 id="heading4i">THAN AN HOUR
+                        </h1>
+                        <p id="para4">
+                        Craving delicous meals without the <br>hassle of cooking or leaving your home?<br>Look no further than Oleave, your go-<br>to foood deleivery website for satsifying you<br>cravings with just a few taps
+                        </p>
+                        <a  id="em" href="menu.html#menu1"><button id="button3">Explore Menu</button></a>
+                    </div>
+                    <div class="mainc2">
+                        <div class="main">
+                        <h1 id="headingu">
+                            01
+                        </h1>
+                        <h1 id="heading4">
+                            REGISTER</h1>
+                            <h1 id="heading4i">ON  WEBSITE 
+                        </h1>
+                        <p id="para5">
+                            Register on Oleave<br>and order your food<br>online to get fastest <br>deleivery
+                        </p>
+                        </div>
+                        <div class="side">
+                            <img id="img2"src="order.jpeg">
+                        </div>
+                    </div>
+                    <div class="mainc3">
+                       <div class="main">
+                        <h1 id="headingu">
+                            02
+                        </h1>
+                        <h1 id="heading5">
+                            SELECT YOUR</h1>
+                            <h1 id="heading5i">FOOD
+                        </h1>
+                        <p id="para6">
+                            Select your favourite food<br>and fullfill your cravings
+                        </p>
+
+
+                        <h1 id="headingu1">
+                            03
+                        </h1>
+                        <h1 id="heading51">
+                            CONFIRM YOUR</h1>
+                            <h1 id="heading5i1">ORDER
+                        </h1>
+                        <p id="para6i">
+                            Confirm your adress
+                        </p>
+                       </div>
+                       <div class="side">
+                        <img id="img3"src="map.jpeg">
+                    </div>
+                    </div>
+                </div>   
+                <div class="curve3"></div>  
+            </div>
+            <div class="thirdpage">
+                <div class="mainwork">
+                    <div class="main">
+                    <div class="headin">
+                       <h1 id="headin">Join us</h1>
+                    </div>
+                    <div class="maine1">
+                        <h1 id="heading7">
+                            PARTNER FOR SHARED
+                        </h1>
+                        <h1 id="heading7i">
+                        SUCCESS
+                        </h1>
+                        <p id="para7">
+                            Join us as a partner and expand your reach<br>in the culinary world.Showcase your<br>delicous creations to a broader audience<br>through our platform.
+                            </p>
+                            <a  id="em" href=""><button id="button4">Join now</button></a>
+                    </div>
+                    </div>
+                    <div class="maine2">
+
+                        <h1 id="heading7">
+                            Got a
+                        </h1>
+                        <h1 id="heading7i">
+                            Restaurent?
+                        </h1>
+                        <p id="para8">
+                            Join us as an partner and expand your<br>reach in the culinary world.Showcase<br>
+                            showcase your delicous creations to a broader<br>audience through our platform.
+                        </p>
+
+                        <img id="img4" src="chef.jpeg">
+                        <a  id="em" href=""><button id="button5">Read more</button></a>
+                    </div>
+                    <div class="maine3">
+
+                        <img id="img4" src="boy.jpeg">
+
+                        <h1 id="heading8">
+                            Got a
+                        </h1>
+                        <h1 id="heading7i">
+                            Bike or Cycle?
+                        </h1>
+                        <p id="para8">
+                            Turn your wheels into earnings by<br>joining our team.Deleivering with us is<br>
+                            not just a job.
+                        </p>
+                        <a  id="em" href=""><button id="button6">Read more</button></a>
+                        
+                    </div>
+                </div>
+                <div class="curve3"></div>  
+            </div>
+            <div class="fourthpage">
+                <div class="headi">
+                </div>
+                <div class="headp">
+                <h1 id="heading9">
+                    WHY WE ARE BEST
+            </h1>
+                </div>
+                 <div class="mainf">
+                    <div class="mainf1">
+                        <div class="cmainf1">
+                        <h1 id="headingn">
+                            1
+                        </h1>
+                        <h1 id="heading44">
+                            Wide culinary
+                        </h1>
+                   
+                        </div>
+                        <h1 id="heading4ii">
+                            selection
+                        </h1>
+                        <p id="para5i">
+                            Choose from a diverse range of<br>cuisines,ensuring there's<br>something for every cravings
+                        </p>
+
+
+                        <div class="cmainf1">
+                        <h1 id="headingni">
+                            2
+                        </h1>
+                        <h1 id="heading444">
+                            FAST
+                        </h1>
+                        </div>
+                        <h1 id="heading4iii">
+                            DELEIVERY:
+                        </h1>
+                        <p id="para4i">
+                            Choose from a diverse range of<br>cuisines,ensuring there's<br>something for every cravings
+                        </p>
+
+
+                        <div class="cmainf1">
+                            <h1 id="headingn">
+                                3
+                            </h1>
+                            <h1 id="heading44">
+                               EXCLUSIVE
+                            </h1>
+                            </div>
+                            <h1 id="heading4ii">
+                                DEALS
+                            </h1>
+                            <p id="para5i">
+                                Unlock special discounts and<br>offers making every order a <br>delightful deal
+                            </p>
+
+
+                    </div>
+                    <div class="mainf2">
+                        <img   id="img5"  src="burger.jpeg">
+                    </div>
+                    <div class="mainf3">
+                        <div class="cmainf1">
+                            <h1 id="headingni">
+                                4
+                            </h1>
+                            <h1 id="heading444">
+                                Real time
+                            </h1>
+                       
+                            </div>
+                            <h1 id="heading4iii">
+                                tracking:
+                            </h1>
+                            <p id="para4i">
+                               Stay informed with live order<br>tracking. so you know exactly<br>where your meal is
+                            </p>
+                            <div class="cmainf1">
+                            <h1 id="headingn">
+                                5
+                            </h1>
+                            <h1 id="heading44">
+                                24/7
+                            </h1>
+                            </div>
+                            <h1 id="heading4ii">
+                                Support
+                            </h1>
+                            <p id="para4j">
+                                Need assistance? Our support<br>team is available around the<br>clock to assist you
+                            </p>
+                            <div class="cmainf1">
+                                <h1 id="headingni">
+                                    6
+                                </h1>
+                                <h1 id="heading444">
+                                   Seamless
+                                </h1>
+                                </div>
+                                <h1 id="heading4iii">
+                                    Ordering
+                                </h1>
+                                <p id="para4i">
+                                    Our user friendly website makes<br>ordering a breeze,from menu<br>browsing to payment
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="curve3"></div>
+                </div>
+                <div class="fifthpage , img7">
+                    <div class="big">
+                        <div class="small1">
+                            <div class="headin2">
+                                <h1 id="headin2">Best buy</h1>
+                             </div>
+                             <h1 id="heading10">
+                                8 CHICKEN BURGERS 
+                             </h1>
+                             <h1 id="heading10i">
+                                +
+                             </h1>
+                             <h1 id="heading10j">
+                                LARGE FRIES
+                             </h1>
+                             <a  id="em" href="menu.html#menu1"><button id="button7">Explore Menu</button></a>
+                            </div>
+                      
+                        <div class="small2">
+                            <h1 id="heading10">
+                                ENJOY BURGERS
+                            </h1>
+                            <h1 id="heading10i">
+                                AT HOME!
+                            </h1>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="sixthpage">
+                        <div class="curve2"></div>
+                        
+                        <div class="headi"></div>
+                        <div class="headp">
+                        <h1 id="heading9">
+                           SEE TODAYS BEST DEALS!!!
+                    </h1>
+                        </div>  
+                        
+                    <div class="large">
+                        <div class="tp">
+                        <div class="t1">
+                            <!-- <img  id="img6" src="photo1.jpg"> -->
+                        </div>
+                        <div class="t2">
+                            
+                        </div>
+                        <div class="t3">
+                            <!-- <img  id="img6" src=""> -->
+                        </div>
+                        <div class="t4">
+                            <!-- <img  id="img6" src="photo1.jpg"> -->
+                        </div>
+                    </div>   
+                    </div>
+                    <div class="buttonf">
+                        <a  id="em" href="menu.html#menu1"><button id="button8">See all</button></a>    
+                    </div> 
+                    </div>
+                    <div class="curve2"></div>
+                    <footer>               
+                        <div class="footerflex">
+                            <div class="footers">
+                                <h2 id="heading10">
+                                    Company
+                                </h2>
+                                <ul id="navlist">
+                                    <li id="navtext">
+                                       <a href="">>About us</a>
+                                    </li>
+                                    <li id="navtext">
+                                        <a href="">>Contact us</a>
+                                    </li>
+                                <li id="navtext">
+                                    <a href="">
+                                        >Privacy Policy
+                                    </a>
+                                </li>
+                                <li id="navtext">
+                                    <a href="">
+                                        >Terms and condition
+                                    </a>
+                                </li>
+                                </ul>    
+                            </div>
+                            <div class="footers">
+                                 <h2 id="heading10">
+                                    Contact
+                                </h2>
+                                <ul id="navlist">
+                                    <li id="navtext">
+                                       <a href=""><img id="loc"  src="https://img.icons8.com/?size=20&id=85149&format=png&color=FFFFFF">Rohtak,Haryana</a>
+                                    </li>
+                                    <li id="navtext">
+                                        <a href=""><img src="https://img.icons8.com/?size=20&id=85164&format=png&color=FFFFFF"> +91 92531****2</a>
+                                    </li>
+                                <li id="navtext">
+                                    <a href=""><img src="https://img.icons8.com/?size=20&id=86862&format=png&color=FFFFFF">
+                                         priyamkathuria7@gmail.com
+                                    </a>
+                                </li>
+                                <li id="navtext">
+                                    <div class="inst">
+                                        <div class="divs">
+                               <img  id="social" class="soc2" src="https://img.icons8.com/?size=20&id=32323&format=png&color=000000">
+                           </div>
+                           <div class="divs">
+                               <img id="social" class="soc1"  src="https://img.icons8.com/?size=20&id=85141&format=png&color=FFFFFF">
+                               
+                           </div>
+                           <div class="divs">
+                               <img  id="social" class="soc3" src="https://img.icons8.com/?size=21&id=XuWFRXvra7aw&format=png&color=000000">
+                           </div>
+                       </div>
+                                </li>
+                                </ul>   
+                    
+                    
+                            </div>
+                            <div class="footers">
+                    
+                                <h2 id="heading10">
+                                    Order now
+                                </h2>
+                                <ul id="navlist">
+                                    <li id="navtext">
+                                       <a href="">Oleave.com</a>
+                                    </li>
+                                    <li id="navtext">
+                                          <a href="">Order your favorite food</a>
+                                    </li>
+                            </div>
+                            <div class="footers">
+                    
+                                <h2 id="heading10">
+                                    newsletter
+                                </h2>
+                                <ul id="navlist">
+                                    <li id="navtext">
+                                        <a href="">
+                            Subscribe for new offers
+                                        </a>
+                        </li>
+                                    <li id="navtext">
+                                        <label for="textarea">
+                                            <input id="text" type="text" placeholder="Your Email">
+                                        </label>
+                                            <input id="button9" type="submit" value="signup">
+                                            
+                                        </input>
+                    
+                                            
+                                        </label>
+                                    </li>
+                                </ul>
+                    
+                            </div>
+                        </div>
+                        <div class="footerbox">
+                            <div class="footertxtbox">
+                                <p id="footertext">
+                                    Copyright &copy; Oleave Ltd 2024 All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

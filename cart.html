@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleave</title>
+    <link rel="icon" href= 
+    "oleave_logo.png" 
+              type="image/x-icon"> 
+    <link rel="stylesheet" href="cart.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="transition">
+        <div class="transition-row row-1">
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+     </div>
+         <div class="transition-row row-2">
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+     </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="./animation.js" defer></script>
+    
+
+
+
+    <div class="header">
+        <div class="navlist">
+            <ul id="navl">
+                <li><a href="index.html" id="listitems" href="">Home</a></li>
+                <li ><a href="menu.html" id="listitems" href="">Menu</a></li>
+                <!-- <li><a href="" id="listitems">Offers</a></li> -->
+                <li><a href="../recipe project/index.html" target="_blank" id="listitems">Recipes</a></li>
+                <li><a href="../food order website finla/aboutus.html" id="listitems">About us
+                </a></li>
+                <li><a href="../food order website finla/help.html" id="listitems">Help
+                </a></li>   
+            </ul>
+        </div>
+        <img  id="logoo" src="oleave_logo.jpg">
+        <div class="navlist">
+            <ul id="nav2">
+                <li>
+                    <form action="">
+                        <input type="search" required>
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </li>
+            <!-- <li><button id="button" href="#">
+                <img src="https://img.icons8.com/?size=30&id=85038&format=png&color=000000">
+            </button></li> -->
+            <a href="cart.html">
+            <li><button id="button" href="#">
+                <img src="https://img.icons8.com/?size=30&id=85080&format=png&color=000000A">
+            </button></li>
+            </a>
+        
+                <div class="header-content">      
+                <li><button id="button-a">
+                    <img src="https://img.icons8.com/?size=29&id=xsQJfMRCX2DI&format=png&color=000000">
+                </button>
+            </div>
+                <div id="dropdown" class="dropdown" style="display: none;">
+                    <button id="logoutbuton">Profile</button>
+                    <div class="profile-section">
+                        <img id="profile-pic" src="kitty.jpg" alt=""/>
+                        <input type="file" id="upload-pic" style="display: none;" accept="image/*" />
+                        <button id="upload-button">Upload Image</button>
+                        <h3 id="user-name">User Name</h3>
+                        <p id="user-email">user@example.com</p>
+                    </div>
+                    <button id="logoutbutton">Logout</button>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <script src="loginfun.js">
+</script>
+
+        </script>
+        <div class="curve"></div>            
+    </div>
+    <div class="firstpage" id="firstpage">
+        <img src="cart.png" id="img">
+        <h3 id="heading">
+            Your food is being prepared!!!
+        </h3>
+        <h4 id="heading2">
+            You can go to menu page to view more food
+        </h4>
+        
+            <button onclick="location.href='menu.html#menu1'" id="button3">
+                See food you crave
+            </button>
+                <button onclick="location.href='#cart'" id="button3">
+                move to cart  </button>
+    </div>
+    <div class="secondpage">
+        <div class="secsub">
+        <div class="account" id="cart">
+            <div class="heading">
+                <div class="accounth">
+                <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=000000" id="img5">
+                <h1 id="heading4">
+                    Account
+                </h1>
+                <img src="mburger.png" id="img4">
+                </div>
+                <p id="para">
+                    To place your order now , log in to your existing account or signup
+                </p>
+                <div class="buttons">
+                <a  href="login.html"><button id="button4">Have an account?<br>Login</button>
+                </a>
+                <a  href="signup.html"><button id="button5">New to Oleave?<br>Sign up</button>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="location">
+            <div class="accounth">
+                <img src="https://img.icons8.com/?size=100&id=85049&format=png&color=000000" id="img5">
+                <h1 id="heading4">
+                    Address
+                </h1>
+                <div class="input" style="display: none">
+                <label id="address" for="">
+                    <input type="text" id="addressi" placeholder="enter your address">
+                </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="Payment">
+            <div class="account_h">
+                <img src="https://img.icons8.com/?size=100&id=7991&format=png&color=000000" id="img5">
+                <h1 id="heading4">
+                    Payment
+                </h1>
+                <div class="paymentmethods" style="display: none;
+                display: flex; flex-direction: row  ;"> 
+                  
+                        <input type="radio" id="credit" name="payment" value="credit" >
+                        <label >Credit Card</label>
+                    
+                        <input id="upi" type="radio" name="payment" value="upi" >
+                        <label>UPI</label> 
+                    <input id="cash" type="radio">
+                    <label>Cash on Delivery
+                    </label>
+                    <div class="porder" style="display: none;">
+                    <button id="buttonc" onclick="window.location.href='qr_and_slot.html'">Place the order</button>
+                </div>
+                </div>
+            </form>
+        </section>
+
+            </div>
+            <div class="paymentt" style="display: none; flex-direction:column;">
+                <h2 class="heading">Pay through UPI</h2>
+                <img src="Rickrolling_QR_code.png" id="payment">
+                </div><div class="container" style="display: none; flex-direction: column;">
+                <!-- Card Section -->
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__logo">MasterCard</div>
+                        <div class="card__chip">
+                            <svg class="card__chip-lines" role="img" width="20px" height="20px" viewBox="0 0 100 100" aria-label="Chip">
+                                <g opacity="0.8">
+                                    <polyline points="0,50 35,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="0,20 20,20 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="50,0 50,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="65,35 80,20 100,20" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="100,50 65,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="35,35 65,35 65,65 35,65 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="0,80 20,80 35,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="50,100 50,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="65,65 80,80 100,80" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                </g>
+                            </svg>
+                            <div class="card__chip-texture"></div>
+                        </div>
+                        <div class="card__type">Debit</div>
+                        <div class="card__number" id="cardNumber">
+                            <span class="card__digit-group">####</span>
+                            <span class="card__digit-group">####</span>
+                            <span class="card__digit-group">####</span>
+                            <span class="card__digit-group">####</span>
+                        </div>
+                        <div class="card__valid-thru" aria-label="Valid thru">Valid<br>thru</div>
+                        <div class="card__exp-date" id="cardExpDate">
+                            <time datetime="2038-01">MM/YY</time>
+                        </div>
+                        <div class="card__name" aria-label="Cardholder Name" id="cardName">Cardholder Name</div>
+                        <div class="card__vendor" role="img" aria-labelledby="card-vendor">
+                            <span id="card-vendor" class="card__vendor-sr">MasterCard</span>
+                        </div>
+                        <div class="card__texture"></div>
+                    
+                    </div>
+                </div>
+        
+                <!-- Input Form -->
+               
+                    <div class="row">
+                        <div class="column">
+                            <label for="name" id="name2">Cardholder Name</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="column">
+                            <label for="expiry" id="expiry2">Expiry Date (MM/YY)</label>
+                            <input type="text" id="expiry" maxlength="5" placeholder="MM/YY">
+                        </div>
+                    </div>
+                    <div class="row full-width">
+                        <label for="number"id="number2">Card Number</label>
+                        <input type="text" id="number" maxlength="16" placeholder="#### #### #### ####">
+                    <button id="buttonp" onclick="window.location.href='qr_and_slot.html'">Proceeed to pay</button>
+                    </div>
+            </div>
+        
+    </div></div>
+    <script>
+        const cardName = document.getElementById("cardName");
+        const cardNumber = document.getElementById("cardNumber");
+        const cardExpDate = document.getElementById("cardExpDate");
+        const inputName = document.getElementById("name");
+        const inputNumber = document.getElementById("number");
+        const inputExpiry = document.getElementById("expiry");
+        inputName.addEventListener("input", () => {
+            cardName.textContent = inputName.value || "Cardholder Name";
+        });
+        inputNumber.addEventListener("input", () => {
+            const formattedNumber = inputNumber.value.replace(/\D/g, "").replace(/(.{4})/g, "$1 ").trim();
+            cardNumber.innerHTML = formattedNumber || "#### #### #### ####";
+        });
+        inputExpiry.addEventListener("input", () => {
+            const formattedDate = inputExpiry.value.replace(/[^0-9/]/g, "").replace(/^(\d{2})(\d{2})?/, (match, p1, p2) => {
+                return p2 ? `${p1}/${p2}` : p1;
+            });
+            cardExpDate.innerHTML = `<time datetime="20${formattedDate.split("/")[1]}-${formattedDate.split("/")[0]}">${formattedDate || "MM/YY"}</time>`;
+        });
+    </script>
+
+    <div class="secsub2">
+        <div class="cartt">
+        <!-- <h2 id="heading2">
+            Cart Empty
+        </h2>     
+        <img src="cart.png" id="img2">
+        <p id="para">
+            Good food is always cooking!<br>Go ahead,order some yummy<br>items from the menu
+        </p> -->
+        <script src="addtocart.js" defer></script>
+        <div class="cart_items">
+            <h1 id="heading2">Cart
+            </h1>
+            <div class="listcart">
+                <div class="mitem1">
+                    <img src="mpizza.png" alt="" class="mimg">
+                    <h1 id="headgingm">PEPPORONI Pizza</h1>
+                    <h1 id="headgingm">$20</h1>                    <span id="plus">
+                        +
+                    </span>
+                    <span>
+                    1
+                    </span>
+                 
+                    <span id="minus">
+                        -
+                    </span>
+                </div>
+            </div>
+            <div class="total-price">
+                <div class="total">
+                <h2>Total Price: <span id="totalPrice">$0</span></h2></div>
+                <button id="buttoncheck"><img src="https://img.icons8.com/?size=30&id=100324&format=png&color=000000"></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+    
+      // Example: listen for an order status update
+      socket.on('orderStatus', (message) => {
+        console.log(message); // You can update the UI here to show the status
+      });
+    
+      // Example: emit an event to update the order status
+      function updateOrderStatus(status) {
+        socket.emit('updateStatus', status);
+      }
+    </script>
+</body>
+</html>

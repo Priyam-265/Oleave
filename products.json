@@ -1,0 +1,66 @@
+{
+  "orders": [
+    {
+      "orderData": {
+        "orderId": "12345",
+        "timeSlot": "12:00 PM - 1:00 PM",
+        "date": "2025-04-11",
+        "status": "Order Confirmed",
+        "items": [
+          {
+            "id": 1,
+            "name": "Pepperoni Pizza",
+            "quantity": 2,
+            "price": 20,
+            "image": "mpizza1.png"
+          },
+          {
+            "id": 2,
+            "name": "Chicken Cheese Pizza",
+            "quantity": 1,
+            "price": 25,
+            "image": "mpizza2.png"
+          }
+        ]
+      }
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Pepperoni Pizza",
+      "price": 20,
+      "image": "mpizza1.png"
+    },
+    {
+      "id": 2,
+      "name": "Chicken Cheese Pizza",
+      "price": 25,
+      "image": "mpizza2.png"
+    },
+    {
+      "id": 3,
+      "name": "Farm House Pizza",
+      "price": 35,
+      "image": "mpizza3.png"
+    },
+    {
+      "id": 4,
+      "name": "Chicken Tikka Pizza",
+      "price": 30,
+      "image": "mpizza4.png"
+    },
+    {
+      "id": 5,
+      "name": "Cheese Chicken Pizza",
+      "price": 30,
+      "image": "mpizza5.png"
+    },
+    {
+      "id": 6,
+      "name": "Afghani Chicken Pizza",
+      "price": 35,
+      "image": "mpizza6.png"
+    }
+  ]
+}
